@@ -1,0 +1,40 @@
+.play-container{
+    background: #f9f9f9;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+    .play-container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.play-container.dark, .play-video.dark, .recommended.dark {
+  background: #181818 !important;
+  color: #f1f1f1 !important;
+}
+.play-container.light, .play-video.light, .recommended.light {
+  background: #f9f9f9 !important;
+  color: #181818 !important;
+}
+
+/* Card improvements for video page */
+.play-video.dark h3, .play-video.dark p, .play-video.dark span, .play-video.dark h4 {
+  color: #fff !important;
+}
+.play-video.light h3, .play-video.light p, .play-video.light span, .play-video.light h4 {
+  color: #181818 !important;
+}
+
+/* Remove border from logo in video page if present */
+.play-video .logo {
+  border: none !important;
+  background: transparent !important;
+}

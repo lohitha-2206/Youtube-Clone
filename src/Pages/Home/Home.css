@@ -1,0 +1,124 @@
+.container{
+    background: #f9f9f9;
+    padding-left: 17%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.large-container{
+    padding-left: 7%;
+}
+
+
+@media (max-width: 900px) {
+    .large-container, .container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+body.dark-mode {
+  background: #181818 !important;
+  color: #f1f1f1 !important;
+  transition: background 0.3s, color 0.3s;
+}
+body.light-mode {
+  background: #fff !important;
+  color: #181818 !important;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark-mode, body.dark-mode * {
+  color: #f1f1f1 !important;
+  background: #181818 !important;
+}
+body.light-mode, body.light-mode * {
+  color: #181818 !important;
+  background: #fff !important;
+}
+
+.container, .large-container {
+  background: inherit !important;
+  color: inherit !important;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Remove border and adjust logo text for dark/light mode */
+.logo {
+  border: none !important;
+  border-radius: 0;
+  background: transparent;
+  height: 48px;
+  width: auto;
+  margin-right: 8px;
+  box-shadow: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+nav.dark .logo {
+  filter: brightness(0) invert(1);
+}
+nav.light .logo {
+  filter: none;
+}
+
+/* Logo text styling */
+.logo-text {
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-left: 8px;
+  vertical-align: middle;
+  display: inline-block;
+  transition: color 0.3s;
+}
+nav.dark .logo-text {
+  color: #fff !important;
+}
+nav.light .logo-text {
+  color: #181818 !important;
+}
+
+/* Navbar improvements */
+nav {
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  transition: background 0.3s, color 0.3s;
+}
+nav.dark {
+  background: #181818 !important;
+  color: #f1f1f1 !important;
+}
+nav.light {
+  background: #fff !important;
+  color: #181818 !important;
+}
+
+/* Sidebar improvements */
+.sidebar.dark {
+  background: #232323 !important;
+  color: #f1f1f1 !important;
+}
+.sidebar.light {
+  background: #fff !important;
+  color: #181818 !important;
+}
+
+/* Feed improvements */
+.feed.dark {
+  background: #181818 !important;
+  color: #f1f1f1 !important;
+}
+.feed.light {
+  background: #f9f9f9 !important;
+  color: #181818 !important;
+}
+.card h2, .card h3, .card p {
+  color: inherit !important;
+}
+
+/* Home container improvements */
+.container, .large-container {
+  background: inherit !important;
+  color: inherit !important;
+  transition: background 0.3s, color 0.3s;
+}
